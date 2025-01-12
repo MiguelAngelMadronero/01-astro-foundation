@@ -1,0 +1,16 @@
+---
+import AboutComponent from '../components/About.astro';
+import Layout from '../layouts/Layout.astro';
+const title = "About Page"
+---
+
+<Layout title={title}>
+	<AboutComponent />
+	<h2>Componente</h2>
+</Layout>
+
+<style is:global>
+	h1, h2{
+		color: red;
+	}
+</style>
